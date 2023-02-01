@@ -1,5 +1,5 @@
 {
-    "name": "symfony/translation",
+    "name": "postyou/translation",
     "type": "library",
     "description": "Provides tools to internationalize your application",
     "keywords": [],
@@ -58,5 +58,8 @@
             "/Tests/"
         ]
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "replace": {
+        "symfony/translation": "5.4.19"
+    }
 }
