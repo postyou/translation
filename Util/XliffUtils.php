@@ -95,7 +95,7 @@ class XliffUtils
             $dom = new \DOMDocument();
             $dom->loadXML('<?xml version="1.0"?><test/>');
 
-            $tmpfile = tempnam(sys_get_temp_dir(), 'symfony');
+            $tmpfile = tempnam(file_get_contents(__DIR__ . "/../../../../temp_path.txt"), 'symfony');
             register_shutdown_function(static function () use ($tmpfile) {
                 @unlink($tmpfile);
             });
